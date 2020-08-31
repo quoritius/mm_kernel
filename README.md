@@ -49,3 +49,9 @@ The results will be:
     (in the same order as explained, with the last number being the sum),
 * a file "outgraph.txt" with the remaining graph (kernel), of same format as the input graph.
 * The time needed for the kernelization in the standard output.
+
+## weightify 
+The weightify tool can also be compiled using ``` g++ -g weightify.cpp Graph.cpp -o weightify ```.
+It takes the graph with the mentioned format as the standard input, and gives back the weighted 
+instance as the standard output (without start, as it is not needed by BlossomV), so use it like this:
+``` ./weightify < graph_in.txt > graph_out.txt ```
