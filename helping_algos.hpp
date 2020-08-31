@@ -9,7 +9,6 @@
 
 
 #include "Graph.hpp"
-#include "functionals.hpp"
 #include "DirectedGraph.hpp"
 #include "components.hpp"
 #include "dominators.hpp"
@@ -614,25 +613,6 @@ std::set<vertex_interface> get_strong_artpoints(
 ) {
     return get_strong_artpoints(D, scc);
 }
-
-// void cut_graph(DirectedGraph& D, std::set<vertex_interface> &A) {
-//     int n = D.get_vertex_size()/2;
-
-//     for(vertex_interface x : A) {
-//         x += n;
-//         std::vector<edge_interface> Ex_in = D.get_v_in_edge_interfaces(x);
-//         std::vector<vertex_interface> x_out = D.get_neighbors(x);
-//         // If the assert fails, then either D or A are built wrong.
-//         // A is the subset of the right side of D, where each vertex has exactly
-//         //  one outgoing edge.
-//         assert(x_out.size() == 1);
-//         for(edge_interface e : Ex_in) { 
-//             if(e.first != x_out[0]) {
-//                 D.delete_edge(e);
-//             } else continue;
-//         }
-//     }
-// }
 
 DirectedGraph cut_graph(DirectedGraph& D, vertex_interface x) {
     int n = D.get_vertex_size()/2;
