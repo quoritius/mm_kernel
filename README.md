@@ -16,11 +16,11 @@ problem to the minimum weight perfect matching, to prepare the graphs for
 using the Blossom V solver (https://link.springer.com/article/10.1007/s12532-009-0002-8).
 
 # Expected Graph Format
-The input data should be of the following format:
-start, n, m  
-from.1 to.1
-from.2 to.2
-...
+The input data should be of the following format:  
+start, n, m   
+from.1 to.1  
+from.2 to.2  
+...  
 from.m to.m
 
 Where everything is a number:
